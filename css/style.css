@@ -1,0 +1,227 @@
+/* Estilos generales */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(54, 28, 82);
+    color:  rgb(39, 19, 86);
+
+}
+.custom-nav {
+    background-color: #1a73e8 !important;
+}
+
+.custom-nav .nav-link,
+.custom-nav .navbar-brand {
+    color: rgb(153, 29, 29); !important;
+    background-color: #25D366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+section{
+    padding: 1rem;
+
+}
+
+.sobre_mi{
+    background-color: rgba(23, 9, 113, 0.952);
+    color: rgb(255, 255, 255);
+}
+/* Estilos para de las letras */
+.name_1{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    
+}
+/* Estilos para la imagen de perfil */
+.yo{
+    border-radius: 50%;
+    border: 5px solid #060664;
+    box-shadow: 0 0 10px rgba(rgb(188, 16, 16), green, blue, alpha);
+    margin-top: 1rem;
+    max-width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Todas las tarjetas iguales */
+.card-uniforme {
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imágenes del mismo tamaño */
+.card-uniforme img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* El cuerpo de la card crece igual */
+.card-uniforme .card-body {
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Botón siempre abajo */
+.card-uniforme .btn {
+  align-self: center;
+}
+
+
+
+/* From Uiverse.io by PapaUiiss404 */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(19, 86, 80);
+  display: flex-box;
+  align-items:center;
+  justify-content: center;
+  padding: 50px 50px;
+  gap: 30px;
+  box-shadow: 0px 0px 20px rgba(84, 22, 22, 0.925);
+}
+
+/* From Uiverse.io by M4rco592 */ 
+.gradient-button {
+  position: relative;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(35, 44, 85);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.gradient-button:hover {
+  transform: scale(1.03);
+}
+
+.gradient-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    #ff6b6b,
+    #4ecdc4,
+    #45b7d1,
+    #96ceb4,
+    #feca57,
+    #ff9ff3,
+    #ff6b6b
+  );
+  z-index: -2;
+  filter: blur(10px);
+  transform: rotate(0deg);
+  transition: transform 1.5s ease-in-out;
+}
+
+.gradient-button:hover::before {
+  transform: rotate(180deg);
+}
+
+.gradient-button::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: black;
+  border-radius: 47px;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.gradient-text {
+  color: transparent;
+  background: conic-gradient(
+    from 0deg,
+    #ff6b6b,
+    #4ecdc4,
+    #45b7d1,
+    #96ceb4,
+    #feca57,
+    #ff9ff3,
+    #ff6b6b
+  );
+  background-clip: text;
+  filter: hue-rotate(0deg);
+}
+
+.gradient-button:hover .gradient-text {
+  animation: hue-rotating 2s linear infinite;
+}
+
+.gradient-button:active {
+  transform: scale(0.99);
+}
+
+@keyframes hue-rotating {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+/* Estilos generales para el contenedor */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 50px;
+}
+
+/* Estilos base para todos los botones */
+.social-button {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: white; /* Color del ícono */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    border-radius: 50%; /* Lo hace redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px; /* Tamaño del ícono */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(226, 198, 198, 0.905); /* Sombra sutil */
+}
+
+/* Efecto al pasar el ratón (hover) */
+.social-button:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* --- Colores Específicos --- */
+
+/* WhatsApp */
+.whatsapp {
+    background-color: #25D366; /* Verde de WhatsApp */
+}
+
+/* Instagram */
+.instagram {
+    /* Gradiente típico de Instagram */
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Facebook */
+.facebook {
+    background-color: #1877F2; /* Azul de Facebook */
+}
